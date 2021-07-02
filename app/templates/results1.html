@@ -1,0 +1,46 @@
+<html lang="en">
+          <head>
+            <meta charset="utf-8">
+          
+            <title>Results</title>
+            <meta name="description" content="Figma htmlGenerator">
+            <meta name="author" content="htmlGenerator">
+            <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="{{ url_for('static', filename='results1.css') }}" media="screen">
+
+            <style>
+              /*
+                Figma Background for illustrative/preview purposes only.
+                You can remove this style tag with no consequence
+              */
+              body {background: #E5E5E5; }
+            </style>
+          </head>
+         <body>
+            <div class=e21_120>
+              <div  class="e19_8"></div>
+              <div  class="e19_9" style="background-image: url({{ url_for('files', filename=filename) }}); background-size: contain;background-repeat:no-repeat;"></div>
+              <span  class="e19_10">We Found: <strong><span style='text-transform: capitalize;'>{{labels}}!</span></strong></span>
+              <span  class="e19_11"><em>With Confidence levels of: {{ confidences }}</em></span>
+                <!--     button added for uploading a photo    -->
+                  <div class="mbr-buttons--left">
+                      <div class="mbr-section-btn">
+                          <a class="u-btn u-button-style u-palette-4-dark-2 u-btn-1" href='https://www.ai-camp.org'>
+                              Visit AI Camp and see how we did this
+                          </a>
+              <div  class="e19_12"></div>
+              <div  class="e39_13"></div>
+              <span  class="e24_4">Results</span>
+              <div  class="e24_5"></div>
+              <span  class="e24_9">Why do we sometimes miss?</span>
+              <span  class="e24_10">Given just three weeks, we only had time to train our model with 3475 labeled images. If we have more time, we can improve our model performance! </span>
+              <span  class="e24_11">Confusion Matrix</span>
+              <div  class="e36_44"></div>
+              <span  class="e36_45"><a href="https://ai-camp.org" target="_blank">AI Camp</a></span>
+              <span  class="e36_46"><a href = "{{url_for('timeline')}}" >Timeline</a></span>
+              <span  class="e36_47"><a href="{{url_for('overview')}}">Overview</a></span>
+              <span  class="e36_48"><a href="{{ url_for('home') }}">Home</a></span>
+          </body>
+          </html>
