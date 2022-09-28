@@ -1,6 +1,8 @@
 # Description
 Worked on this project with 6 people. Contributed to data collection, data labeling, model training, model testing, website design, and product demo.
 
+Demo: https://www.youtube.com/watch?v=j_4g2G42mZQ
+
 # cv_yolo_scaffold
 A scaffold for deploying dockerized flask applications showcasing student computer vision projects using yolo.
 
